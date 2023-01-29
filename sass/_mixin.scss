@@ -1,0 +1,35 @@
+@mixin flex($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin bg($url, $repeat, $position, $size) {
+    background-image: url($url);
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+}
+
+@mixin psevdoEl($width, $height, $position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
+    display: inline-block;
+    width: $width;
+    height: $height;
+    content: "";
+} 
+
+%list-unstyled {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
